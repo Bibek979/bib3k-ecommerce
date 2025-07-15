@@ -214,7 +214,7 @@ If you find a bug, please create an issue on GitHub with:
 ## 📞 Support
 
 For questions or support:
-- Email: support@bib3k.com
+- Email: support@bib3k.me
 - GitHub Issues: [Create an issue](https://github.com/yourusername/bib3k-ecommerce/issues)
 
 ## 🎯 Current Status

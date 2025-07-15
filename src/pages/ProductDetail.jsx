@@ -210,12 +210,12 @@ const ProductDetail = () => {
               {/* Price */}
               <div className="flex items-center space-x-3 mb-6">
                 <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                  ${product.price}
+                  &#x20b9;{product.price}
                 </span>
                 {product.originalPrice && (
                   <>
                     <span className="text-xl text-gray-500 line-through">
-                      ${product.originalPrice}
+                      &#x20b9;{product.originalPrice}
                     </span>
                     <span className="bg-red-100 text-red-800 px-2 py-1 rounded-full text-sm">
                       {discountPercentage}% off
