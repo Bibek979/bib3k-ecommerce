@@ -96,7 +96,7 @@ const Checkout = () => {
               </p>
               <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-6">
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Order Total: <span className="font-semibold">${finalTotal.toFixed(2)}</span>
+                  Order Total: <span className="font-semibold">&#x20b9;{finalTotal.toFixed(2)}</span>
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Estimated Delivery: 3-5 business days
@@ -282,9 +282,10 @@ const Checkout = () => {
                         onChange={handleShippingChange}
                         className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 dark:bg-gray-700 dark:text-white"
                       >
-                        <option value="United States">United States</option>
-                        <option value="Canada">Canada</option>
-                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="India">India</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Tibet">Tibet</option>
+                        <option value="Bangladesh">Bangladesh</option>
                       </select>
                     </div>
                   </div>
@@ -422,7 +423,7 @@ const Checkout = () => {
                           </p>
                         </div>
                         <span className="font-medium text-gray-900 dark:text-white">
-                          ${(item.price * item.quantity).toFixed(2)}
+                          &#x20b9;{(item.price * item.quantity).toFixed(2)}
                         </span>
                       </div>
                     ))}
@@ -466,7 +467,7 @@ const Checkout = () => {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-gray-600 dark:text-gray-400">Subtotal</span>
-                  <span className="text-gray-900 dark:text-white">${totalPrice.toFixed(2)}</span>
+                  <span className="text-gray-900 dark:text-white">&#x20b9;{totalPrice.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600 dark:text-gray-400">Shipping</span>
@@ -476,13 +477,13 @@ const Checkout = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600 dark:text-gray-400">Tax</span>
-                  <span className="text-gray-900 dark:text-white">${tax.toFixed(2)}</span>
+                  <span className="text-gray-900 dark:text-white">&#x20b9;{tax.toFixed(2)}</span>
                 </div>
                 <div className="border-t border-gray-200 dark:border-gray-700 pt-3">
                   <div className="flex justify-between">
                     <span className="text-lg font-semibold text-gray-900 dark:text-white">Total</span>
                     <span className="text-lg font-semibold text-gray-900 dark:text-white">
-                      ${finalTotal.toFixed(2)}
+                      &#x20b9;{finalTotal.toFixed(2)}
                     </span>
                   </div>
                 </div>

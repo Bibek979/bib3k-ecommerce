@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { useTheme } from './contexts/ThemeContext'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
       <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900">
+        <ScrollToTop />
         <Navbar />
         <main className="flex-1">
           <Routes>

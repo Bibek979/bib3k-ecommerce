@@ -90,11 +90,11 @@ const Cart = () => {
                       </p>
                       <div className="flex items-center space-x-2 mt-2">
                         <span className="text-lg font-bold text-gray-900 dark:text-white">
-                          ${item.price}
+                          &#x20b9;{item.price}
                         </span>
                         {item.originalPrice && (
                           <span className="text-sm text-gray-500 line-through">
-                            ${item.originalPrice}
+                            &#x20b9;{item.originalPrice}
                           </span>
                         )}
                       </div>
@@ -130,7 +130,7 @@ const Cart = () => {
                       Subtotal
                     </span>
                     <span className="text-lg font-semibold text-gray-900 dark:text-white">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      &#x20b9;{(item.price * item.quantity).toFixed(2)}
                     </span>
                   </div>
                 </motion.div>
@@ -153,7 +153,7 @@ const Cart = () => {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-gray-600 dark:text-gray-400">Subtotal</span>
-                  <span className="text-gray-900 dark:text-white">${totalPrice.toFixed(2)}</span>
+                  <span className="text-gray-900 dark:text-white">&#x20b9;{totalPrice.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600 dark:text-gray-400">Shipping</span>
@@ -163,13 +163,13 @@ const Cart = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600 dark:text-gray-400">Tax</span>
-                  <span className="text-gray-900 dark:text-white">${tax.toFixed(2)}</span>
+                  <span className="text-gray-900 dark:text-white">&#x20b9;{tax.toFixed(2)}</span>
                 </div>
                 <div className="border-t border-gray-200 dark:border-gray-700 pt-3">
                   <div className="flex justify-between">
                     <span className="text-lg font-semibold text-gray-900 dark:text-white">Total</span>
                     <span className="text-lg font-semibold text-gray-900 dark:text-white">
-                      ${finalTotal.toFixed(2)}
+                      &#x20b9;{finalTotal.toFixed(2)}
                     </span>
                   </div>
                 </div>
@@ -178,7 +178,7 @@ const Cart = () => {
               {totalPrice < 50 && (
                 <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
                   <p className="text-sm text-yellow-800 dark:text-yellow-200">
-                    Add ${(50 - totalPrice).toFixed(2)} more to get free shipping!
+                    Add &#x20b9;{(50 - totalPrice).toFixed(2)} more to get free shipping!
                   </p>
                 </div>
               )}

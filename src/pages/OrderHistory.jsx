@@ -145,7 +145,7 @@ const OrderHistory = () => {
                           Order #{order.id}
                         </span>
                       </div>
-                      <span className={`px-3 py-1 rounded-full text-sm font-medium ${getStatusColor(order.status)}`}>
+                      <span className={`px-3 py-1 rounded-full text-sm font-medium &#x20b9;{getStatusColor(order.status)}`}>
                         {order.status.charAt(0).toUpperCase() + order.status.slice(1)}
                       </span>
                     </div>
@@ -155,7 +155,7 @@ const OrderHistory = () => {
                           Placed on {new Date(order.date).toLocaleDateString()}
                         </div>
                         <div className="text-lg font-semibold text-gray-900 dark:text-white">
-                          ${order.total.toFixed(2)}
+                          &#x20b9;{order.total.toFixed(2)}
                         </div>
                       </div>
                       <button className="flex items-center space-x-2 text-primary-600 hover:text-primary-700">
@@ -198,7 +198,7 @@ const OrderHistory = () => {
                         </div>
                         <div className="text-right">
                           <div className="font-semibold text-gray-900 dark:text-white">
-                            ${item.price.toFixed(2)}
+                            &#x20b9;{item.price.toFixed(2)}
                           </div>
                         </div>
                       </div>

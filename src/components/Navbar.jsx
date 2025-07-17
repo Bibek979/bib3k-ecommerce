@@ -57,7 +57,7 @@ const Navbar = () => {
               <span className="text-white font-bold text-sm">B3</span>
             </div>
             <span className="text-xl font-bold text-gray-900 dark:text-white">
-              Bib3k Store
+              bibek's store
             </span>
           </Link>
 
